@@ -1,7 +1,7 @@
 --Warm Up 1
 -- 1. What is the earliest year of purchase?
 
-select max(year) as earliest_year 
+select min(year) as earliest_year 
 from prework.sales
 limit 1
 
@@ -32,3 +32,4 @@ Group by 1
 select Product_Category, Age_Group, AVG(Order_Quantity) avg_order_qt, SUM(Profit) total_profit
 from prework.sales
 group by 1,2
+
